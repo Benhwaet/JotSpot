@@ -1,7 +1,7 @@
 {
   "name": "jot.spot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Jot down your thoughts on the spot!",
   "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",

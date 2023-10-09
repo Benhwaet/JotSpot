@@ -31,12 +31,12 @@
       "type": "image/png"
     }
   ],
-  "name": "Just Another Text Editor",
-  "short_name": "JATE",
+  "name": "JOTspot",
+  "short_name": "JOT",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "./",
-  "description": "Jot Spot: Jot down your thoughts with JATE",
-  "background_color": "#7eb4e2",
-  "theme_color": "#7eb4e2"
+  "description": "Jot down your thoughts on the spot! with this web app.",
+  "background_color": "#ff7700",
+  "theme_color": "#232228"
 }

@@ -5,23 +5,22 @@ let installPrompt = null;
 // TODO: Add an event handler to the `beforeinstallprompt` event
 window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
-    installPrompt = event;
-    installBtn.removeAttribute('hidden');
-    
+    window.deferredPrompt = event;
+    installBtn.classList.toggle('hidden', false);
 });
 
 // TODO: Implement a click event handler on the `butInstall` element
 installBtn.addEventListener('click', async () => {
+    const installPrompt = window.deferredPrompt;
     if (!installPrompt) {
         return;
     }
-    const result = await installPrompt.prompt();
-    console.log(`Install prompt was: ${result.outcome}`);
-    installPrompt = null;
-    installBtn.setAttribute('hidden', '');
+    installPrompt.prompt();
+    installBtn.classList.toggle('hidden', true);
 });
 
 // TODO: Add an handler for the `appinstalled` event
 window.addEventListener('appinstalled', (event) => {
+    window.deferredPrompt = null;
     console.log('Jot was installed.', event);
 });
