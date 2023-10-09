@@ -35,8 +35,8 @@ module.exports = () => {
         description: 'Jot down your thoughts on the spot! with this web app.',
         background_color: '#ff7700',
         theme_color: '#232228',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('./src/images/logo.png'),
