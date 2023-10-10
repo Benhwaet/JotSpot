@@ -46,7 +46,7 @@ Images of the deployed app can be found below:
 
 The following animation demonstrates the application functionality:
 
-![Demonstration of the finished Module 19 Challenge being used in the browser and then installed.]()
+![Demonstration of the finished Module 19 Challenge being used in the browser and then installed.](https://drive.google.com/file/d/1TJm9aPXocpeVX-R5zQ0VhWDYrOntresE/view?usp=sharing)
 
 The following image shows the application's `manifest.json` file:
 
