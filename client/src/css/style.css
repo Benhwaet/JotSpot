@@ -37,6 +37,10 @@ h1 {
   padding-top: 10px;
 }
 
+.CodeMirror {
+  height: 100%;
+}
+
 .loading-spinner {
   animation-duration: 0.75s;
   animation-iteration-count: infinite;
@@ -208,4 +212,9 @@ h1 {
   h1 {
     font-size: 18px;
   }
+}
+
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
 }
