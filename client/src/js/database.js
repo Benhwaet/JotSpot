@@ -14,21 +14,21 @@ const initdb = async () =>
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
-  console.log('Post to the ase');
   const db = await openDB('jot', 1);
   const tx = db.transaction('jot', 'readwrite');
   const store = tx.objectStore('jot');
   const request = store.put({ id:1 , value: content });
+
   const result = await request;
   console.log('🚀 - data saved to the database', result);
 }
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
-  console.log('Get from the base');
   const db = await openDB('jot', 1);
   const tx = db.transaction('jot', 'readonly');
   const store = tx.objectStore('jot');
   const request = store.get(1);
+ 
   const result = await request;
   request
   ? console.log('🚀 - data retrieved from the database', result.value)

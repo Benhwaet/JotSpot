@@ -4,7 +4,7 @@ let installPrompt = null;
 // Logic for installing the PWA
 // TODO: Add an event handler to the `beforeinstallprompt` event
 window.addEventListener('beforeinstallprompt', (event) => {
-    event.preventDefault();
+   
     window.deferredPrompt = event;
     installBtn.classList.toggle('hidden', false);
 });
@@ -16,6 +16,7 @@ installBtn.addEventListener('click', async () => {
         return;
     }
     installPrompt.prompt();
+    window.deferredPrompt = null;
     installBtn.classList.toggle('hidden', true);
 });
 
